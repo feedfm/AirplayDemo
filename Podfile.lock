@@ -1,0 +1,33 @@
+PODS:
+  - AirplayMuxer (0.1.0):
+    - AirplayMuxer/Core (= 0.1.0)
+    - FeedMedia (~> 5.1)
+  - AirplayMuxer/Core (0.1.0):
+    - FeedMedia (~> 5.1)
+  - FeedMedia (5.1.2):
+    - FeedMedia/Core (= 5.1.2)
+  - FeedMedia/Core (5.1.2)
+
+DEPENDENCIES:
+  - AirplayMuxer (from `https://github.com/feedfm/FeedAirplayMuxer.git`)
+
+SPEC REPOS:
+  trunk:
+    - FeedMedia
+
+EXTERNAL SOURCES:
+  AirplayMuxer:
+    :git: https://github.com/feedfm/FeedAirplayMuxer.git
+
+CHECKOUT OPTIONS:
+  AirplayMuxer:
+    :commit: 0c0b95e71ec345d18fd2dd7a630c9c73edb650c5
+    :git: https://github.com/feedfm/FeedAirplayMuxer.git
+
+SPEC CHECKSUMS:
+  AirplayMuxer: 993560db0d2e07504befd87b57d8806169643aae
+  FeedMedia: d0c275f8f2fb0f9a6a321e629bbf4bba0110f7bd
+
+PODFILE CHECKSUM: 3b14eb2bd16c826a1a2f1667e72fc1f24f609ab1
+
+COCOAPODS: 1.11.2

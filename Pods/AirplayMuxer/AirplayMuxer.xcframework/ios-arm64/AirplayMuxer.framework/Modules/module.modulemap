@@ -1,0 +1,6 @@
+framework module AirplayMuxer {
+  umbrella header "AirplayMuxer.h"
+
+  export *
+  module * { export * }
+}

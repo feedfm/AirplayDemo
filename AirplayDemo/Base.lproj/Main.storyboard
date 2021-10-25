@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffy-cG-GOS">
+                                <rect key="frame" x="350" y="430" width="44" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="bq0-GN-sEh"/>
+                                    <constraint firstAttribute="height" constant="35" id="gHf-dm-d7o"/>
+                                </constraints>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3qE-jR-LdK"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CV1-yR-khk">
+                                <rect key="frame" x="20" y="64" width="374" height="297"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CV1-yR-khk" secondAttribute="height" multiplier="34:27" id="2CO-qt-qQB"/>
+                                    <constraint firstAttribute="height" constant="297" id="PP3-24-d8n"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tu-uy-Mc6" userLabel="Airplay">
+                                <rect key="frame" x="20" y="440" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Aqg-xq-k9o"/>
+                                    <constraint firstAttribute="width" secondItem="0Tu-uy-Mc6" secondAttribute="height" multiplier="1:1" id="ED3-7Y-6LZ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="S9f-XV-bMd"/>
+                                    <constraint firstAttribute="width" constant="50" id="oSx-cj-otv"/>
+                                    <constraint firstAttribute="height" constant="50" id="uCS-9S-D4T"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CV1-yR-khk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8Je-oh-exy"/>
+                            <constraint firstItem="0Tu-uy-Mc6" firstAttribute="top" secondItem="CV1-yR-khk" secondAttribute="bottom" constant="79" id="PRX-Kz-10s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CV1-yR-khk" secondAttribute="trailing" constant="20" id="UTb-so-oER"/>
+                            <constraint firstItem="0Tu-uy-Mc6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ffc-hF-GOh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ffy-cG-GOS" secondAttribute="trailing" constant="20" id="gld-5Z-fXj"/>
+                            <constraint firstItem="CV1-yR-khk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lif-Lh-1ZO"/>
+                            <constraint firstItem="CV1-yR-khk" firstAttribute="width" secondItem="CV1-yR-khk" secondAttribute="height" multiplier="34:27" id="ort-Xl-hZg"/>
+                            <constraint firstItem="Ffy-cG-GOS" firstAttribute="top" secondItem="CV1-yR-khk" secondAttribute="bottom" constant="69" id="zcs-8I-33K" userLabel="Play Button.top = Player View.bottom + 79"/>
+                            <constraint firstItem="0Tu-uy-Mc6" firstAttribute="width" secondItem="0Tu-uy-Mc6" secondAttribute="height" multiplier="1:1" id="ziT-E1-dIS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="airPlayButton" destination="0Tu-uy-Mc6" id="H3Y-PM-9pm"/>
+                        <outlet property="playButton" destination="Ffy-cG-GOS" id="xSl-0I-hyI"/>
+                        <outlet property="playerView" destination="CV1-yR-khk" id="Ttf-Ob-JRs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

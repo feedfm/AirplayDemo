@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AirplaySDK",
+        "repositoryURL": "https://github.com/feedfm/FeedAirPlayer",
+        "state": {
+          "branch": "main",
+          "revision": "a49ac4ace7389165e9fcaebbb956a03411efc660",
+          "version": null
+        }
+      },
+      {
+        "package": "M3U8Parser",
+        "repositoryURL": "https://github.com/feedfm/M3U8Parser",
+        "state": {
+          "branch": null,
+          "revision": "118469bbb6db6ece3f799b9565a7429c8c377c60",
+          "version": "1.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

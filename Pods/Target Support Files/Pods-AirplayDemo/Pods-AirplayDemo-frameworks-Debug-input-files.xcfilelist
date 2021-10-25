@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-AirplayDemo/Pods-AirplayDemo-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AirplayMuxer/Core/AirplayMuxer.framework/AirplayMuxer
+${PODS_XCFRAMEWORKS_BUILD_DIR}/FeedMedia/Core/FeedMedia.framework/FeedMedia
